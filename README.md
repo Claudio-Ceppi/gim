@@ -3,4 +3,19 @@ Corso di Grafica in movimento 2025, SUPSI
 
 ## Esercizio 1A
 
-- Link all'esercizio
+- [Esercizio 1A acceso_spento_2](/gim/Esercizio_1A/acceso_spento_2.html)
+- [Esercizio 1A acceso_spento_3](/gim/Esercizio_1A/acceso_spento_3.html)
+- [Esercizio 1A aperto_chiuso_2](/gim/Esercizio_1A/aperto_chiuso_2.html)
+- [Esercizio 1A aperto_chiuso_3](/gim/Esercizio_1A/aperto_chiuso_3.html)
+- [Esercizio 1A rotazione_2](/gim/Esercizio_1A/rotazione_2.html)
+- [Esercizio 1A rotazione_3](/gim/Esercizio_1A/rotazione_3.html)
+- [Esercizio 1A spostamento_2](/gim/Esercizio_1A/spostamento_2.html)
+- [Esercizio 1A spostamento_2](/gim/Esercizio_1A/spostamento_3.html)
+
+## Esercizio 1B
+
+- Esercizio 1B - logo loop
+
+## Esercizio 1C
+
+- Esercizio 1C - commento
