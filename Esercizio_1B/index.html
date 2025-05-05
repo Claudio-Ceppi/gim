@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="author" content="Nome Cognome" />
+	<title>img</title>
+	<style type="text/css">
+		html{
+			height:100%;
+		}
+		body{
+			background-color: rgb(235,235,235);
+			margin: 3em 2em;
+		}
+	</style>
+
+</head>
+<body>
+
+	<img />
+
+	<script type="module">
+
+		const sequenza = [
+			"img/frame_000.png",
+			"img/frame_001.png",
+			"img/frame_002.png",
+			"img/frame_003.png",
+			"img/frame_004.png",
+			"img/frame_005.png",
+			"img/frame_006.png",
+			"img/frame_007.png",
+			"img/frame_008.png",
+			"img/frame_009.png",
+			"img/frame_010.png",
+			"img/frame_011.png",
+			"img/frame_012.png",
+			"img/frame_013.png",
+			"img/frame_014.png",
+			"img/frame_015.png",
+			"img/frame_016.png",
+			"img/frame_017.png",
+			"img/frame_018.png",
+			"img/frame_019.png",
+			"img/frame_020.png",
+			"img/frame_021.png",
+			"img/frame_022.png",
+			"img/frame_023.png",
+			"img/frame_024.png",
+			"img/frame_025.png",
+			"img/frame_026.png",
+			"img/frame_027.png",
+			"img/frame_028.png",
+			"img/frame_029.png",
+			"img/frame_030.png",
+			"img/frame_031.png",
+			"img/frame_032.png",
+			"img/frame_033.png",
+			"img/frame_034.png",
+			"img/frame_035.png",
+			"img/frame_036.png",
+			"img/frame_037.png",
+			"img/frame_038.png",
+			"img/frame_039.png",
+
+		]
+
+		let frame = 0
+
+		setInterval(() => {
+			const img = document.querySelector("img")
+			img.src = sequenza[frame]
+			frame = (frame + 1) % sequenza.length
+		}, 30)
+
+	</script>
+</body>
+</html>
