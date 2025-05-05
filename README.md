@@ -14,7 +14,7 @@ Corso di Grafica in movimento 2025, SUPSI
 
 ## Esercizio 1B
 
-- [Esercizio 1B - logo loop](/Esercizio_1B/esercizio1b.html)
+- [Esercizio 1B - logo loop](https://claudio-ceppi.github.io/gim/Esercizio_1B/esercizio1b.html)
 
 ## Esercizio 1C
 
