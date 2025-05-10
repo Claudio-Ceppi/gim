@@ -22,4 +22,4 @@ Corso di Grafica in movimento 2025, SUPSI
 
 ## Esercizio 2
 
-- [Esercizio 2 parallasse](/http://127.0.0.1:3000/Volumes/T7_Shield/Supsi/Semestre_2/Grafica_in_movimento/GIT_HUB/gim/Esercizio_2/index_interattivo.html)
+- [Esercizio 2 parallasse](https://claudio-ceppi.github.io/gim/Esercizio_2/index_interattivo.html)
