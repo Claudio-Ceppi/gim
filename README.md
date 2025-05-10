@@ -22,4 +22,4 @@ Corso di Grafica in movimento 2025, SUPSI
 
 ## Esercizio 2
 
-- [Esercizio 2 parallasse](/gim/Esercizio_2/index_interattivo.html)
+- [Esercizio 2 parallasse](/Esercizio_2/index_interattivo.html)
