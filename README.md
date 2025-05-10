@@ -19,3 +19,7 @@ Corso di Grafica in movimento 2025, SUPSI
 ## Esercizio 1C
 
 - [Esercizio 1C - commento](/Esercizio_1C/README2.md)
+
+## Esercizio 2
+
+- [Esercizio 2 parallasse] (https://github.com/Claudio-Ceppi/gim/blob/main/Esercizio_2/index_interattivo.html)
