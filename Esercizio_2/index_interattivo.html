@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Multiplane Camera</title>
+		<style>
+			body {
+				margin: 0;
+				background-color: darkgray;
+			}
+			main {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				min-height: 100dvh;
+			}
+			#container {
+				display: grid;
+				place-items: center;
+				transform-style: preserve-3d;
+				perspective: 3000px;
+			}
+			.layer {
+				display: inline-block;
+				grid-area: 1/1/1/1;
+				user-select: none;
+				pointer-events: none;
+				width: min(75vw, 75vh);
+			}
+			.layer img {
+				width: 100%;
+				transition: transform 0.1s ease-out; /* Aggiungi transizione per l'ingrandimento */
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+		 	<div id="container">
+				<div style="translate: 0 0 -100px;" class="layer"><img src="img/livello8.png"></div>
+				<div style="translate: 0 0  -30px;" class="layer"><img src="img/livello7.png" id="livello7"></div>
+				<div style="translate: 0 0    0px;" class="layer"><img src="img/livello6.png"></div>
+				<div style="translate: 0 0   100px;" class="layer"><img src="img/livello5.png"></div>
+				<div style="translate: 0 0  150px;" class="layer"><img src="img/livello4.png" id="livello4"></div>
+				<div style="translate: 0 0  200px;" class="layer"><img src="img/livello3.png"></div>
+				<div style="translate: 0 0  250px;" class="layer"><img src="img/livello2.png"></div>
+				<div style="translate: 0 0  300px;" class="layer"><img src="img/livello1.png"></div>
+				
+			</div>
+		</main>
+		<script>
+			document.body.addEventListener('mousemove', (e) => {
+				const container = document.getElementById('container');
+				const livello7 = document.getElementById('livello7'); // Aggiungi riferimento all'immagine livello7
+				const x = (e.clientX - window.innerWidth / 2) / window.innerWidth * Math.PI * 0.75;
+				const y = -(e.clientY - window.innerHeight / 2) / window.innerHeight * Math.PI * 0.75;
+				
+				// Effetto di rotazione del contenitore
+				container.style.transform = "rotateX(" + y + "rad) rotateY(" + x + "rad)";
+				
+				// Calcolo della scala basato sulla posizione orizzontale del mouse
+				const scale = 1 + (e.clientX / window.innerWidth - 0.5) * 2; // Varia tra -1 e +1, aggiungendo 1 per avere un range da 0 a 2
+				livello7.style.transform = `scale(${Math.min(Math.max(scale, 0.5), 2)})`; // Limita la scala tra 0.5 e 2
+			});
+			
+			// Oscillazione leggera per livello4
+			let angle = 0;
+			const livello4 = document.getElementById('livello4');
+			
+			function animateCloud() {
+				// Oscillazione da destra a sinistra
+				angle += 0.02; // Incremento per la velocità di oscillazione
+				const offset = Math.sin(angle) * 70; // Leggero movimento orizzontale (da -10px a 10px)
+				livello4.style.transform = `translateX(${offset}px)`; // Applica la traslazione orizzontale
+				requestAnimationFrame(animateCloud); // Continua l'animazione
+
+				
+			}
+
+			
+			
+			animateCloud(); // Avvia l'animazione
+		</script>
+	</body>
+</html>
