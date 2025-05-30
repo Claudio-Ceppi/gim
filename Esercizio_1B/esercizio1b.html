@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="author" content="Nome Cognome" />
+	<title>img</title>
+	<style type="text/css">
+		html{
+			height:100%;
+		}
+		body{
+			background-color: rgb(235,235,235);
+			margin: 3em 2em;
+		}
+	</style>
+
+</head>
+<body>
+
+	<img />
+
+	<script type="module">
+
+		const sequenza = [
+			"immagini/frame_000.jpg",
+			"immagini/frame_001.jpg",
+			"immagini/frame_002.jpg",
+			"immagini/frame_003.jpg",
+			"immagini/frame_004.jpg",
+			"immagini/frame_005.jpg",
+			"immagini/frame_006.jpg",
+			"immagini/frame_007.jpg",
+			"immagini/frame_008.jpg",
+			"immagini/frame_009.jpg",
+			"immagini/frame_010.jpg",
+			"immagini/frame_011.jpg",
+			"immagini/frame_012.jpg",
+			"immagini/frame_013.jpg",
+			"immagini/frame_014.jpg",
+			"immagini/frame_015.jpg",
+			"immagini/frame_016.jpg",
+			"immagini/frame_017.jpg",
+			"immagini/frame_018.jpg",
+			"immagini/frame_019.jpg",
+			"immagini/frame_020.jpg",
+			"immagini/frame_021.jpg",
+			"immagini/frame_022.jpg",
+			"immagini/frame_023.jpg",
+			"immagini/frame_024.jpg",
+			"immagini/frame_025.jpg",
+			"immagini/frame_026.jpg",
+			"immagini/frame_027.jpg",
+			"immagini/frame_028.jpg",
+			"immagini/frame_029.jpg",
+			"immagini/frame_030.jpg",
+			"immagini/frame_031.jpg",
+			"immagini/frame_032.jpg",
+			"immagini/frame_033.jpg",
+			"immagini/frame_034.jpg",
+			"immagini/frame_035.jpg",
+			"immagini/frame_036.jpg",
+			"immagini/frame_037.jpg",
+			"immagini/frame_038.jpg",
+			"immagini/frame_039.jpg",
+			
+
+		]
+
+		let frame = 0
+
+		setInterval(() => {
+			const img = document.querySelector("img")
+			img.src = sequenza[frame]
+			frame = (frame + 1) % sequenza.length
+		}, 30)
+
+	</script>
+</body>
+</html>
