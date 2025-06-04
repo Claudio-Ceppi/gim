@@ -28,3 +28,4 @@ Corso di Grafica in movimento 2025, SUPSI
 
 - [Esercizio 3A neve](https://claudio-ceppi.github.io/gim/Esercizio_3A/Neve/index.html)
 - [Esercizio 3A pioggia](https://claudio-ceppi.github.io/gim/Esercizio_3A/Pioggia/index.html)
+- [Esercizio 3A pong](https://claudio-ceppi.github.io/gim/Esercizio_3A/Pong/index.html)
