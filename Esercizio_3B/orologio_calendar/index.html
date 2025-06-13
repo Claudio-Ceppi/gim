@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<title>Orologio Analogico + Google Calendar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="./icons/icon_32.png" type="image/png" />
+<link rel="manifest" href="./manifest.json" />
+<style>
+body, html {
+overscroll-behavior: none;
+height: 100%;
+margin: 0;
+background-color: #f8fafc;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+ }
+canvas {
+display: block;
+ }
+/* Rimuovi questo CSS perché ora i bottoni sono gestiti da p5.js */
+/*
+#login-button {
+position: absolute;
+top: 20px;
+left: 20px;
+z-index: 1000;
+padding: 10px 16px;
+background-color: #2563eb;
+color: white;
+border: none;
+border-radius: 4px;
+font-size: 14px;
+cursor: pointer;
+ }
+*/
+</style>
+</head>
+<body>
+<!-- Rimuovi questo bottone perché ora è creato da p5.js -->
+<!-- <button id="login-button">Accedi con Google</button> -->
+
+<!-- p5.js -->
+<script src="https://cdn.jsdelivr.net/npm/p5@1.11.5/lib/p5.min.js"></script>
+
+<!-- Google API Libraries - AGGIORNATE -->
+<script src="https://apis.google.com/js/api.js"></script>
+<script src="https://accounts.google.com/gsi/client"></script>
+
+<!-- Il tuo sketch -->
+<script src="./sketch.js"></script>
+</body>
+</html>

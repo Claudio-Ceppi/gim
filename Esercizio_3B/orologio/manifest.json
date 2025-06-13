@@ -1,0 +1,35 @@
+{
+  "name": "Pianificatore Attività",
+  "short_name": "Planner",
+  "description": "App per pianificare visivamente le attività giornaliere su un orologio analogico.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "display_override": ["standalone", "fullscreen", "minimal-ui"],
+  "orientation": "portrait",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "./icons/icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon_256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon_64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon_32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}
+
